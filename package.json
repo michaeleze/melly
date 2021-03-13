@@ -1,0 +1,27 @@
+{
+  "name": "cms-graphcms",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "NODE_TLS_REJECT_UNAUTHORIZED=0 next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "autoprefixer": "10.1.0",
+    "classnames": "2.2.6",
+    "date-fns": "2.10.0",
+    "next": "latest",
+    "postcss": "8.2.2",
+    "react": "17.0.1",
+    "react-dom": "17.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^14.14.34",
+    "@types/react": "^17.0.3",
+    "postcss-flexbugs-fixes": "^5.0.2",
+    "postcss-preset-env": "^6.7.0",
+    "tailwindcss": "2.0.2",
+    "typescript": "^4.2.3"
+  },
+  "license": "MIT"
+}
