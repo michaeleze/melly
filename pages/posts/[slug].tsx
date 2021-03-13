@@ -1,16 +1,16 @@
 import { useRouter } from 'next/router'
 import ErrorPage from 'next/error'
-import Container from 'components/atom/container'
-import PostBody from 'components/atom/post-body'
-import MoreStories from 'components/molecule/more-stories'
-import Header from 'components/atom/header'
-import PostHeader from 'components/organism/post-header'
-import SectionSeparator from 'components/atom/section-separator'
-import Layout from 'components/organism/layout'
-import { getAllPostsWithSlug, getPostAndMorePosts } from 'lib/graphcms'
-import PostTitle from 'components/atom/post-title'
+import Container from '../../components/atom/container'
+import PostBody from '../../components/atom/post-body'
+import MoreStories from '../../components/molecule/more-stories'
+import Header from '../../components/atom/header'
+import PostHeader from '../../components/organism/post-header'
+import SectionSeparator from '../../components/atom/section-separator'
+import Layout from '../../components/organism/layout'
+import { getAllPostsWithSlug, getPostAndMorePosts } from '../../lib/graphcms'
+import PostTitle from '../../components/atom/post-title'
 import Head from 'next/head'
-import { CMS_NAME } from 'lib/constants'
+import { NAME } from '../../lib/constants'
 
 export default function Post({ post, morePosts, preview }) {
   const router = useRouter()
@@ -30,7 +30,7 @@ export default function Post({ post, morePosts, preview }) {
             <article>
               <Head>
                 <title>
-                  {post.title} | Next.js Blog Example with {CMS_NAME}
+                  {post.title} | Next.js Blog Example with {NAME}
                 </title>
                 {/* <meta property="og:image" content={post.ogImage.url} /> */}
               </Head>
