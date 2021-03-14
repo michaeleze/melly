@@ -1,0 +1,32 @@
+.sideNavContainer {
+  writing-mode: vertical-lr;
+  font-size: 3rem;
+  display: flex;
+  align-items: center;
+  font-weight: 100;
+  transform: rotate(
+      180deg
+  );
+  padding: 20px;
+  box-sizing: border-box;
+  justify-content: space-around;
+}
+
+/*.sideNavContainer a {*/
+/*  margin: 20px 0;*/
+/*}*/
+
+.sideNavContainer a:hover {
+  cursor: pointer;
+  color: #541388;
+}
+
+.mainWithSideNav {
+  display: flex;
+}
+
+@media screen and (max-width: 800px) {
+  .sideNavContainer {
+    display: none;
+  }
+}

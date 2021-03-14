@@ -1,18 +1,11 @@
 import Layout from '../components/organism/layout';
-import styles from '../styles/home-styles.module.css';
 import React from 'react';
+import Section from "../components/organism/section";
 
-export default function Index({ preview, src, header }) {
+export default function Index({ preview, src, header, text } : {preview: boolean, src: string, header: string, text: string}) {
   return (
       <Layout preview={preview}>
-        <div className={styles.container}>
-          <div className={styles.imgContainer}>
-            <img className={styles.img} src={src} />
-          </div>
-          <div className={styles.headContainer}>
-            <h1 className={styles.head}>{header}</h1>
-          </div>
-        </div>
+        <Section header={header} src={src} text={text}/>
       </Layout>
   );
 };
@@ -22,7 +15,7 @@ export async function getStaticProps ({ preview = false }) {
     ? 'http://localhost:3000/api/home'
     : '/api/home';
 
-  let data: {src: string, header: string};
+  let data: {src: string, header: string, text: string};
 
   try{
     const res = await fetch(api);
@@ -34,6 +27,7 @@ export async function getStaticProps ({ preview = false }) {
   return {
     props: {
       src: data?.src,
+      text: data?.text,
       header: data?.header,
     },
   }
