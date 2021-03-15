@@ -18,10 +18,9 @@
   background: #383838;
 }
 
-.head {
-  font-size: 7rem;
-  font-weight: 700;
-  line-height: 1;
+.subText {
+  font-size: 4rem;
+  font-weight: 100;
   padding: 10px 0;
   box-sizing: border-box;
 }
@@ -33,21 +32,22 @@
   border-right: 1px solid #111827;
 }
 
-.subText {
-  color: #541388;
-  font-size: 2rem;
-  font-weight: 200;
+.head {
+  //color: #541388;
+  font-size: 7rem;
+  font-weight: 800;
+  line-height: 1;
   text-transform: uppercase;
   padding: 10px 0;
   box-sizing: border-box;
 }
 @media screen and (max-width: 898px){
-  .head {
-    font-size: 7rem;
-  }
-
   .subText {
     font-size: 3rem;
+  }
+
+  .head {
+    font-size: 7rem;
   }
 
   .imgContainer {
@@ -91,6 +91,6 @@
   }
 
   .subText {
-    font-size: 1.5rem;
+    font-size: 3rem;
   }
 }

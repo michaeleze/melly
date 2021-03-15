@@ -8,8 +8,8 @@ const Section = ({header, src, text}) => {
         <img alt='michaeleze' className={styles.img} src={src} />
       </div>
       <div className={styles.headContainer}>
-        <p className={styles.subText}>{text}</p>
         <h1 className={styles.head}>{header}</h1>
+        <p className={styles.subText}>{text}</p>
       </div>
     </section>
   )
