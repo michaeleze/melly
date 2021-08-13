@@ -2,7 +2,7 @@
   "name": "cms-graphcms",
   "version": "1.0.0",
   "scripts": {
-    "dev": "NODE_TLS_REJECT_UNAUTHORIZED=0 next",
+    "dev": "next",
     "build": "next build",
     "start": "next start"
   },
