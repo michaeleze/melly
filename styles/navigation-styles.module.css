@@ -1,32 +1,35 @@
-.sideNavContainer {
-  writing-mode: vertical-lr;
-  font-size: 3rem;
-  display: flex;
-  align-items: center;
-  font-weight: 100;
-  transform: rotate(
-      180deg
-  );
-  padding: 20px;
-  box-sizing: border-box;
-  justify-content: space-around;
-}
-
-/*.sideNavContainer a {*/
-/*  margin: 20px 0;*/
-/*}*/
-
-.sideNavContainer a:hover {
-  cursor: pointer;
-  color: #541388;
-}
-
-.mainWithSideNav {
-  display: flex;
-}
-
-@media screen and (max-width: 800px) {
-  .sideNavContainer {
-    display: none;
-  }
-}
+    .sideNavContainer {
+        writing-mode: vertical-lr;
+        font-size: calc(100% + 3px);
+        font-weight: 800;
+        text-transform: uppercase;
+        display: flex;
+        align-items: center;
+        transform: rotate( 180deg);
+        padding: 10px 0 10px 20px;
+        gap: 1.5em;
+        box-sizing: border-box;
+    }
+    
+    .sideNavContainer a {
+        color: rgb(248, 169, 21);
+    }
+    
+    .sideNavContainer a:hover {
+        cursor: pointer;
+        color: #541388;
+    }
+    
+    @media screen and (max-width: 310px) {
+        .sideNavContainer {
+            writing-mode: horizontal-tb;
+            transform: none;
+        }
+    }
+    
+    @media screen and (max-width: 798px) {
+        .sideNavContainer {
+            writing-mode: horizontal-tb;
+            transform: none;
+        }
+    }

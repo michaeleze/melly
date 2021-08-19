@@ -1,0 +1,22 @@
+    .layout {
+        height: 100%;
+        display: grid;
+        grid-template-rows: 70px 3fr calc(100% / 8);
+        grid-row-gap: 10px;
+    }
+    
+    .mainWithSideNav {
+        display: flex;
+    }
+    
+    @media screen and (max-width: 310px) {
+        .mainWithSideNav {
+            flex-direction: column;
+        }
+    }
+    
+    @media screen and (max-width: 798px) {
+        .mainWithSideNav {
+            flex-direction: column;
+        }
+    }

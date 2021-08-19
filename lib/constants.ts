@@ -11,11 +11,17 @@ export const HOME_OG_IMAGE_URL =
 
 export const HOME_CONTENT: IHomeContent = {
   src: '/assets/img/me4.jpg',
-  text: 'Hello Nice to meet you',
-  header: 'FullStack + Software Engineer',
+  text: 'Hello nice to meet you',
+  header: 'Software Engineer',
 };
 
 export const SIDE_NAV = [
+  {href: '/portfolio', text: 'Portfolio'},
+  {href: '/blog', text: 'Blog'},
+  {href: '/contact', text: 'Contact'},
+]
+
+export const NAV = [
   {href: '/home', text: 'Home'},
   {href: '/about', text: 'About'},
   {href: '/portfolio', text: 'Portfolio'},
